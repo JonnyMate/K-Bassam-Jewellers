@@ -1,5 +1,5 @@
 $main: #6002ee;
-$second: #d602ee;
+$second: #ee0290;
 
 html,
 body,
@@ -8,31 +8,43 @@ div {
   margin: 0;
 }
 
+body {
+  color: #fff;
+  background-color: whitesmoke;
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  display: inline-block;
+  background-color: $main;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 5px $second;
+}
+
 .parallax-container {
   color: #000;
   width: 40%;
-  margin: 100px auto;
+  margin: 50px auto;
 
   .parallax {
     height: 40vh !important;
     width: 40vw !important;
-    background-color: $main;
+    background-color: $second;
+    border-radius: 10px;
   }
 
   .layer {
     height: 40vh !important;
     width: 40vw !important;
-
-    .arrow {
-      position: absolute;
-      bottom: 50%;
-      transform: translateY(50%);
-      background-color: #494949c5;
-    }
   }
 
   img {
     height: 100%;
     width: 100%;
+    border-radius: 10px;
   }
 }

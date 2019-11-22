@@ -5,16 +5,35 @@ div {
   margin: 0;
 }
 
+body {
+  color: #fff;
+  background-color: whitesmoke;
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  display: inline-block;
+  background-color: #6002ee;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 5px #ee0290;
+          box-shadow: 0 5px #ee0290;
+}
+
 .parallax-container {
   color: #000;
   width: 40%;
-  margin: 100px auto;
+  margin: 50px auto;
 }
 
 .parallax-container .parallax {
   height: 40vh !important;
   width: 40vw !important;
-  background-color: #6002ee;
+  background-color: #ee0290;
+  border-radius: 10px;
 }
 
 .parallax-container .layer {
@@ -22,16 +41,9 @@ div {
   width: 40vw !important;
 }
 
-.parallax-container .layer .arrow {
-  position: absolute;
-  bottom: 50%;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  background-color: #494949c5;
-}
-
 .parallax-container img {
   height: 100%;
   width: 100%;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=App.css.map */
