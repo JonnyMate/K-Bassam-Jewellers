@@ -1,6 +1,38 @@
+$main: #6002ee;
+$second: #d602ee;
+
 html,
 body,
 div {
   padding: 0;
   margin: 0;
+}
+
+.parallax-container {
+  color: #000;
+  width: 40%;
+  margin: 100px auto;
+
+  .parallax {
+    height: 40vh !important;
+    width: 40vw !important;
+    background-color: $main;
+  }
+
+  .layer {
+    height: 40vh !important;
+    width: 40vw !important;
+
+    .arrow {
+      position: absolute;
+      bottom: 50%;
+      transform: translateY(50%);
+      background-color: #494949c5;
+    }
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
 }

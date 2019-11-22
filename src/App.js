@@ -1,10 +1,11 @@
 import React from "react";
 import "./App.css";
+import ParallaxComponent from "./components/ParallaxComponent";
 
 function App() {
   return (
     <div>
-      <h1>TEXT</h1>
+      <ParallaxComponent />
     </div>
   );
 }

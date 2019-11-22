@@ -4,4 +4,34 @@ div {
   padding: 0;
   margin: 0;
 }
+
+.parallax-container {
+  color: #000;
+  width: 40%;
+  margin: 100px auto;
+}
+
+.parallax-container .parallax {
+  height: 40vh !important;
+  width: 40vw !important;
+  background-color: #6002ee;
+}
+
+.parallax-container .layer {
+  height: 40vh !important;
+  width: 40vw !important;
+}
+
+.parallax-container .layer .arrow {
+  position: absolute;
+  bottom: 50%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  background-color: #494949c5;
+}
+
+.parallax-container img {
+  height: 100%;
+  width: 100%;
+}
 /*# sourceMappingURL=App.css.map */
