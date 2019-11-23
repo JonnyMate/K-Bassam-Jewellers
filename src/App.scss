@@ -1,5 +1,6 @@
-$main: #6002ee;
-$second: #ee0290;
+$main: #00acc1;
+$second: #007c91;
+$third: #5ddef4;
 
 html,
 body,
@@ -16,13 +17,49 @@ body {
 }
 
 .title {
-  font-family: "Playfair Display", serif;
+  font-family: "Raleway", sans-serif;
   display: inline-block;
   background-color: $main;
   padding: 10px;
   margin: 10px;
-  border-radius: 10px;
-  box-shadow: 0 5px $second;
+  border-top: 7px solid $second;
+}
+
+.navbar {
+  font-size: 17px;
+  background-color: $main;
+  width: 50%;
+  margin: 10px auto;
+
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    border-top: 7px solid $second;
+
+    a {
+      position: relative;
+      color: #fff;
+      width: 50%;
+      text-decoration: none;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0px;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        transform: scaleX(0);
+        transition: transform 250ms ease-in;
+      }
+
+      &:hover::after {
+        transform: scaleX(0.4);
+      }
+    }
+  }
 }
 
 .parallax-container {
@@ -34,7 +71,6 @@ body {
     height: 40vh !important;
     width: 40vw !important;
     background-color: $second;
-    border-radius: 10px;
   }
 
   .layer {
@@ -45,6 +81,5 @@ body {
   img {
     height: 100%;
     width: 100%;
-    border-radius: 10px;
   }
 }
