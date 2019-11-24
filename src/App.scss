@@ -83,3 +83,14 @@ body {
     width: 100%;
   }
 }
+
+.info {
+  position: absolute;
+  left: 50%;
+  width: 50%;
+  padding: 10px;
+  margin-top: 500px;
+  transform: translate(-50%, -50%);
+  background-color: $main;
+  border-top: 7px solid $second;
+}
